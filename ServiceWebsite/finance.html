@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <title>Service Website</title>
+
+</head>
+<body>
+
+    <nav class="navbar navbar-light bg-light justify-content-between">
+        <a href="#"><img style=" height: 100px; width: 200px;" src="https://images.squarespace-cdn.com/content/v1/58e3bf169f7456907ea7e2bf/1493240120302-VNT3V4XZ2XX2REPKC3L5/ke17ZwdGBToddI8pDm48kLN33MCaMri5_kQBC52hVftZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpyqylgK486yu2adhfXJXe_419WGzblEfHOXASI1SNLnL3U5hJGSSZrBsjs2deskRFo/image-asset.png"></a>
+        <a href="#" class="navbar-brand">Home</a>
+        <a href="#" class="navbar-brand">Services</a>
+        <a href="#" class="navbar-brand">Pricings</a>
+        <a href="#" class="navbar-brand">About</a>
+        <a href="#" class="navbar-brand"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
+        <a href="#" class="navbar-brand"><span class="glyphicon glyphicon-log-in"></span> Register</a>
+    </nav>
+    <br>
+
+    <!-- <button onclick="document.getElementById('demo').innerHTML=Date()">The time is?</button> -->
+
+    
+
+<div class="container">
+    <div class="row">
+        <div class="col"></div>
+        <div class="col-8" style="text-align: center; background-color: #333;">
+            <br><br>
+            <h3 style="font-family: Brush Script MT, Brush Script Std, cursive; text-align: center; color: whitesmoke;"> Order Form </h3>
+            <hr style="width:20%; margin-left:40%; border-width: 3px; border-color: whitesmoke;">
+            <h2 style="color: whitesmoke;">Drop your order </h2>
+            <br>
+            <form>
+                <div class="row">
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Your mail">
+                    </div>
+                    <div class="col">
+                      <input type="text" class="form-control" placeholder="Your name">
+                    </div>
+                </div>
+                <br>
+
+                <div class="row">
+                    <div class="col">
+
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Service Dropdown
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            
+                              <a class="dropdown-item" href="#" onclick="document.getElementById('demo1').innerHTML=od1(245000)">Android Development</a>
+                              <a class="dropdown-item" href="#" onclick="document.getElementById('demo2').innerHTML=od2(250000)">Web Development</a>
+                              <a class="dropdown-item" href="#" onclick="document.getElementById('demo3').innerHTML=od3(285000)">UI/UX Development </a>
+                              <a class="dropdown-item" href="#" onclick="document.getElementById('demo4').innerHTML=od4(350000)">Cloud Services</a>
+                              <a class="dropdown-item" href="#" onclick="document.getElementById('demo5').innerHTML=od5(375000)">IOT Services</a>
+                              <a class="dropdown-item" href="#" onclick="document.getElementById('demo6').innerHTML=od5(430000)">BlockChain Services</a>
+                            </div>
+                        </div>
+
+                        <script>
+                            var m,n,o,p,q,r;
+                            function od1(a) 
+                            {
+                                m=a;
+                              return a;
+                            }
+                        
+                            function od2(a) 
+                            {
+                                n=a;
+                              return a;
+                            }
+                        
+                            function od3(a) 
+                            {
+                                o=a;
+                              return a;
+                            }
+                        
+                            function od4(a) 
+                            {
+                                p=a;
+                              return a;
+                            }
+                        
+                            function od5(a) 
+                            {
+                                q=a;
+                              return a;
+                            }
+                       
+                            function od6(a) 
+                            {
+                                r=a;
+                              return a;
+                            }
+                        </script>
+                
+                        <br><br>
+                        <p style="color: whitesmoke;">Order Summary</p>
+                        <p id="demo1" style="color: whitesmoke;"></p>
+                        <p id="demo2" style="color: whitesmoke;"></p>
+                        <p id="demo3" style="color: whitesmoke;"></p>
+                        <p id="demo4" style="color: whitesmoke;"></p>
+                        <p id="demo5" style="color: whitesmoke;"></p>
+                        <p id="demo6" style="color: whitesmoke;"></p>
+
+                        <button type="submit" class="btn btn-primary" style="background-color: #333; border-color: #333;" onclick="document.getElementById('demo').innerHTML=toAMT(m,n,o,p,q,r)">Total</button>
+            
+                        <br>
+                        <br>
+                        <p id="demo" style="color: whitesmoke;"></p>
+
+                        <script>
+
+                            function toAMT(m=0,n=0,o=0,p=0,q=0,r=0) {
+                              return (m+n+o+p+q+r);
+                            }
+                            
+                        </script>
+
+
+                    </div>
+
+                    <div class="col">
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1"></label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="10" placeholder="Any remarks"></textarea>
+                        </div>
+                    </div>
+                </div>
+                
+                <a href="finance.html" style="color: whitesmoke;" onclick="myFunction()">Submit</a>
+
+
+                <script>
+                    function myFunction() 
+                    {
+                        alert("I am an alert box!");
+                    }
+                </script>
+
+            </form>
+            <br>
+          </div>
+          <div class="col">
+          </div>
+          
+        </div>
+
+    </div>
+
+
+    <br>
+    <div class="info" style="background-color: #333;">
+        <br>
+        <div class="row" style=" text-align: center; color: whitesmoke;">
+            <div class="col-sm-4">
+                <h3><img src="https://images.squarespace-cdn.com/content/v1/58e3bf169f7456907ea7e2bf/1493240120302-VNT3V4XZ2XX2REPKC3L5/ke17ZwdGBToddI8pDm48kLN33MCaMri5_kQBC52hVftZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpyqylgK486yu2adhfXJXe_419WGzblEfHOXASI1SNLnL3U5hJGSSZrBsjs2deskRFo/image-asset.png"></h3> </div>
+        </div>
+        <div class="text-center p-3" style="color: whitesmoke;">
+            © 2020 Copyright :
+            <a class="text-light" href="https://google.com/">MCS.com</a>
+        </div>
+    </div>
+
+</body>
+</html>
